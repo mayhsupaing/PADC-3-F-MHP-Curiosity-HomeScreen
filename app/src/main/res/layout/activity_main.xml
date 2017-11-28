@@ -9,7 +9,8 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -20,12 +21,108 @@
 
     </android.support.design.widget.AppBarLayout>
 
-
-
     <LinearLayout
+        android:id="@+id/rl_curiosity_homescreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_curiosity_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/curiosity_logo"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_curiosity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="curiosity"
+            android:textSize="30sp"
+            android:textColor="@color/accent"
+            />
+
+
+
+        <Button
+        android:id="@+id/btn_log_in_with_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+        android:text="@string/btn_sign_in_with_facebook"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/icons"
+        android:background="@color/primary"
+
+        />
+
+        <Button
+            android:id="@+id/btn_log_in_with_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_sign_in_with_google"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            />
+
+        <Button
+            android:id="@+id/btn_log_in_with_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_sign_in_with_twitter"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/icons"
+            android:background="@color/accent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <Button
+            android:id="@+id/btn_sign_up_with_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="@string/btn_sign_up_email"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/icons"
+            android:background="@color/secondary_text"
+            />
+
+        <Button
+            android:id="@+id/btn_sign_in_with_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="@string/btn_sign_in_email"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/icons"
+            android:background="@color/secondary_text"
+            />
+
+
+        </LinearLayout>
+
 
 
     </LinearLayout>
