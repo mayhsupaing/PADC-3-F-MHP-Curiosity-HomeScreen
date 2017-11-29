@@ -27,14 +27,15 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/curiosity_bg_icon">
 
         <ImageView
             android:id="@+id/iv_curiosity_icon"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/curiosity_logo"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:layout_gravity="center"
             />
 
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="curiosity"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textColor="@color/accent"
             />
 
@@ -54,14 +55,15 @@
             android:id="@+id/btn_log_in_with_facebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:text="@string/btn_sign_in_with_facebook"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/icons"
             android:background="@color/primary"
             android:drawableLeft="@drawable/facebook_icon"
             android:drawablePadding="-30dp"
+
         />
 
         <Button
@@ -71,7 +73,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/btn_sign_in_with_google"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/icons"
             android:background="@color/primary_dark"
             android:drawableLeft="@drawable/google_icon"
@@ -86,7 +88,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/btn_sign_in_with_twitter"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/icons"
             android:background="@color/accent"
             android:drawableLeft="@drawable/twitter_icon"
@@ -98,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+
             >
 
         <Button
@@ -108,11 +111,10 @@
             android:layout_weight="1"
             android:text="@string/btn_sign_up_email"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/icons"
             android:background="@color/secondary_text"
             android:drawableLeft="@drawable/mail_icon"
-
             />
 
         <Button
@@ -120,10 +122,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:text="@string/btn_sign_in_email"
             android:textAllCaps="false"
-            android:textSize="18sp"
+            android:textSize="15sp"
+            android:textAlignment="center"
             android:textColor="@color/icons"
             android:background="@color/secondary_text"
             android:drawableLeft="@drawable/mail_icon"
@@ -131,6 +135,17 @@
 
 
         </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_terms_and_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Condition and Privacy Policy"
+            android:layout_gravity="center"
+            android:paddingTop="50dp"
+            android:textSize="10sp"
+            android:textColor="@color/divider"/>
 
 
 
